@@ -2,6 +2,7 @@
 import React, { Component, useState } from "react";
 import '../styles/App.css';
 
+let i = 1;
 class App extends Component {
   constructor(props) {
     super(props)
@@ -41,6 +42,13 @@ class App extends Component {
     return (
       <div id="main">
         {/* Do not remove the main div */}
+        <ol>
+					<li key = {`location${i++}`}>{this.cityList[0].name}</li>
+          
+					<li key = {`location${i++}`}>{this.cityList[1].name}</li>
+          
+					<li key = {`location${i++}`}>{this.cityList[2].name}</li>
+        </ol>
       </div>
     )
   }
